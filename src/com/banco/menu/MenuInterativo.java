@@ -6,7 +6,6 @@ import com.banco.model.Conta;
 import com.banco.model.ContaCorrente;
 import com.banco.model.ContaPoupanca;
 
-
 import java.util.Scanner;
 
 public class MenuInterativo {
@@ -75,12 +74,12 @@ public class MenuInterativo {
         scanner.nextLine(); // Consumir a nova linha
 
         // Definir valor inicial
-        System.out.print("Digite o valor inicial da conta (mínimo $500): ");
+        System.out.print("Digite o valor inicial da conta (mínimo R$ 500): ");
         double valorInicial = scanner.nextDouble();
         scanner.nextLine(); // Consumir a nova linha
 
         if (valorInicial < 500) {
-            System.out.println("Valor mínimo não atingido. A conta será criada com $500.");
+            System.out.println("Valor mínimo não atingido. A conta será criada com R$ 500.");
             valorInicial = 500;
         }
 
