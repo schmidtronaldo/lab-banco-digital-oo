@@ -1,3 +1,12 @@
+package com.banco.menu;
+
+import com.banco.model.Banco;
+import com.banco.model.Cliente;
+import com.banco.model.Conta;
+import com.banco.model.ContaCorrente;
+import com.banco.model.ContaPoupanca;
+
+
 import java.util.Scanner;
 
 public class MenuInterativo {

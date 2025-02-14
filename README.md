@@ -50,6 +50,8 @@ Encapsulamento, Herança, Polimorfismo e Abstração .
 
 > Remover clientes ou contas.
 
+> Verificar informações relacionadas aos clientes
+
 - Visualizar o saldo total do banco.(apenas administradores)
 
 - Salvar os dados dos clientes e contas em um arquivo (por exemplo, JSON ou CSV) para que as informações não sejam perdidas ao fechar o programa e futuramente conectar em um banco de dados.
@@ -59,6 +61,8 @@ Encapsulamento, Herança, Polimorfismo e Abstração .
 - Criptografar senhas antes de armazená-las.
 
 - Implementar um limite de tentativas de login para evitar ataques de força bruta.
+
+- Adicionar data e hora das transações
 
 - Criar uma interface gráfica (usando JavaFX, Swing ou outra biblioteca) para tornar o sistema mais amigável.
 

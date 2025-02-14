@@ -1,3 +1,5 @@
+package com.banco.model;
+
 import java.util.ArrayList;
 import java.util.List;
 

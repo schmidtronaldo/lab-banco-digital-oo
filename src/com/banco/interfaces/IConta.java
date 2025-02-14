@@ -1,3 +1,4 @@
+package com.banco.interfaces;
 
 public interface IConta {
 	
