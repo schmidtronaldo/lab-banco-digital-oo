@@ -17,10 +17,6 @@ public class Banco {
         return nome;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
     public List<Conta> getContas() {
         return contas;
     }
@@ -50,6 +46,24 @@ public class Banco {
         for (Cliente cliente : clientes) {
             if (cliente.getCpf().equals(cpf)) {
                 return cliente;
+            }
+        }
+        return null;
+    }
+
+    public Cliente buscarClientePorNome(String nome) {
+        for (Cliente cliente : clientes) {
+            if (cliente.getNome().equalsIgnoreCase(nome)) {
+                return cliente;
+            }
+        }
+        return null;
+    }
+
+    public Conta buscarContaPorClienteESenha(Cliente cliente, String senha) {
+        for (Conta conta : contas) {
+            if (conta.getCliente().equals(cliente) && conta.verificarSenha(senha)) {
+                return conta;
             }
         }
         return null;

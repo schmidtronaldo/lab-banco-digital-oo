@@ -16,6 +16,10 @@ public abstract class Conta implements IConta {
         this.senha = senha;
     }
 
+    public Cliente getCliente() {
+        return cliente;
+    }
+
     @Override
     public void sacar(double valor) {
         saldo -= valor;
@@ -55,3 +59,4 @@ public abstract class Conta implements IConta {
         System.out.println(String.format("Saldo: %.2f", this.saldo));
     }
 }
+

@@ -12,28 +12,65 @@ Encapsulamento, Herança, Polimorfismo e Abstração .
 
 ### Explicação das Melhorias:
 
-- Banco.java: Adicionamos métodos para gerenciar contas e clientes, além de buscar contas e clientes por número e CPF, respectivamente.
+- Adicionamos métodos para gerenciar contas e clientes, além de buscar contas e clientes por número e CPF, respectivamente.
 
-- Cliente.java: Adicionamos CPF e senha ao cliente.
+- Adicionamos CPF e senha ao cliente.
 
-- Conta.java: Adicionamos um método para verificar a senha.
+- Adicionamos um método para verificar a senha.
 
-- Main.java: Criamos um terminal interativo onde o usuário pode criar clientes, acessar contas e realizar operações bancárias.
+- Criamos um terminal interativo onde o usuário pode criar clientes, acessar contas e realizar operações bancárias.
 
 ### Funcionalidades Implementadas
 
-- Criação de Cliente: O usuário pode criar um cliente com nome, CPF e senha.
+- O usuário pode criar um cliente com nome, CPF e senha.
 
-- Criação de Contas: Ao criar um cliente, uma conta corrente e uma poupança são automaticamente criadas com um depósito inicial de $500.
+- Ao criar um cliente, ele tem opçao de escolher entre uma conta corrente ou uma conta poupança e fazer um depósito inicial de no minimo $500.
 
-- Acesso à Conta: O usuário pode acessar sua conta inserindo o número da conta e a senha.
+- O usuário pode acessar sua conta inserindo o nome ou cpf  e a senha.
 
-- Operações Bancárias: O usuário pode sacar, depositar, transferir e imprimir o extrato da conta.
+- O usuário pode sacar, depositar, transferir e imprimir o extrato da conta.
 
 ### Próximos Passos
 
-- Adicionar Funcionalidades de Administrador: Implementar um menu específico para administradores, onde eles possam gerenciar clientes e contas.
+- Implementar um menu específico para administradores, onde eles possam gerenciar clientes e contas.
 
-- Validações Adicionais: Adicionar validações para evitar erros, como saldo insuficiente para saque ou transferência.
+- Adicionar validações para evitar erros, como saldo insuficiente para saque ou transferência.
 
-- Persistência de Dados: Implementar persistência de dados para que as informações não sejam perdidas ao fechar o programa.
+- Implementar persistência de dados para que as informações não sejam perdidas ao fechar o programa.
+
+- Verificar se o CPF já está cadastrado antes de criar um novo cliente.
+
+- Validar o formato do CPF.
+
+- Garantir que o valor inicial da conta seja um número válido (positivo e maior ou igual a 500).
+
+- Criar um menu específico para administradores, onde eles possam:
+
+> Listar todos os clientes e contas.
+
+> Remover clientes ou contas.
+
+- Visualizar o saldo total do banco.(apenas administradores)
+
+- Salvar os dados dos clientes e contas em um arquivo (por exemplo, JSON ou CSV) para que as informações não sejam perdidas ao fechar o programa e futuramente conectar em um banco de dados.
+
+- Carregar os dados ao iniciar o programa.
+
+- Criptografar senhas antes de armazená-las.
+
+- Implementar um limite de tentativas de login para evitar ataques de força bruta.
+
+- Criar uma interface gráfica (usando JavaFX, Swing ou outra biblioteca) para tornar o sistema mais amigável.
+
+- Armazenar e exibir um histórico de transações (saques, depósitos e transferências) para cada conta.
+
+- Implementar taxas para a conta corrente (por exemplo, taxa de manutenção).
+
+- Adicionar rendimentos para a conta poupança (por exemplo, juros mensais).
+
+### Conclusão
+
+ Gostei muito de desenvolver este projeto e sei que ele tem muito a ser explorado e me ajudou a entender os pilares principais da orientação a objetos e como a linguagem java funciona.
+ Agradeço a todos os professores e o banco Bradesco e Digital Innovation One pela iniciativa.
+ Há muito a ser melhorado e estou feliz com o resultado até aqui...
+ Obrigado.
